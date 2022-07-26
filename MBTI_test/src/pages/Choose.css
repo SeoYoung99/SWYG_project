@@ -1,0 +1,48 @@
+.Choose {
+  background-color: #F8FAFF;
+  width: 390px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.YourMBTI{
+  display: block;
+  box-sizing: border-box;
+  width: 390px;
+  height: 50vh;
+  padding-top: 4rem;
+}
+.YourTypes{
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.YourTypes > div{
+  box-sizing: border-box;
+  width: 75px;
+  height: 40px;
+  padding-top: 6.5px;
+  border: solid 2px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: white;
+}
+.YourTypes :hover{
+  cursor: pointer;
+}
+.YourTypes>.ESTP {
+  border: #558CED solid 2px;
+}
+.YourTypes>.ESTP1 {
+  background-color: #558CED;
+  border: #558CED solid 2px;
+}
+.YourTypes > .ISTJ{
+  border: #3BC55A solid 2px;
+}
+.YourTypes> .ISTJ9 {
+  background-color: #3BC55A;
+  border: #3BC55A solid 2px;
+}
+
