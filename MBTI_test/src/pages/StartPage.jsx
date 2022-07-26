@@ -19,7 +19,11 @@ function StartPage({ getStart }) {
             }}
             alt="logo"
           />
-          <div className="StartButton" onClick={() => getStart(false)}>
+          <div
+            className="StartButton"
+            style={{ cursor: 'pointer' }}
+            onClick={() => getStart(false)}
+          >
             테스트 하러가기 →
           </div>
           <div

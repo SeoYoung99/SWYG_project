@@ -2,19 +2,20 @@ import React, { useState } from 'react'
 import './App.css'
 import StartPage from './pages/StartPage'
 import Choose from './pages/Choose_MBTI'
+import TestPage from './pages/TestPage'
 
 function App() {
   const [startButton, setStart] = useState(true)
   const getStart = (start) => {
     setStart(start)
   }
-  const [comp, setComp] = useState(Choose)
+
   return (
     <>
       <div>
         {/* {startButton && <StartPage getStart={getStart} />}
         {!startButton && <Choose />} */}
-        <Choose />
+        <TestPage />
         {/* <button
           style={{
             width: '280px',

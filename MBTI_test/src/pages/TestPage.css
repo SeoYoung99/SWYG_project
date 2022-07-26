@@ -1,0 +1,70 @@
+.Background{
+  background-color: #F8FAFF;
+  width: 390px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.Center{
+  display: block;
+  /* background-color: rgb(255, 204, 137); */
+  width: 342;
+  height: 60vh;
+  padding-top: 20vh;
+}
+.Percent{
+  width: 350px;
+  height: 10px;
+  border: solid 1.5px #2A6FFF;
+  border-radius: 5px;
+  margin-left: 20px;
+  box-sizing: border-box;
+}
+.Logo{
+  width: 60px;
+  height: 60px;
+  background: url('../Group\ 14.png') no-repeat;
+  text-align: center;
+  position: relative;
+  bottom: 27px;
+  right: 14px;
+  color: white;
+}
+.Question{
+  margin-top: 40px;
+  padding-left: 20px;
+}
+.MBTI{
+  display: inline-block;
+  width: 75px;
+  height: 40px;
+  border: solid 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 6px;
+  box-sizing: border-box;
+}
+.Answer{
+  box-sizing: border-box;
+  width: 350px;
+  height: 50px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 13px;
+  text-align: center;
+}
+.NextBtn{
+  box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    background-color: #2A6FFF;
+    color: white;
+    border: solid 1.5px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding-top: 8px;
+    text-align: center;
+}
