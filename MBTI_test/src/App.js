@@ -1,78 +1,56 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import {
+  BrowserRouter,
+  Router,
+  Route,
+  Switch,
+  Link,
+  useLocation,
+} from 'react-router-dom'
 import './App.css'
 import StartPage from './pages/StartPage'
 import Choose from './pages/Choose_MBTI'
 import TestPage from './pages/TestPage'
+import ResultPage from './pages/ResultPage'
 
 function App() {
-  const [startButton, setStart] = useState(true)
-  const getStart = (start) => {
-    setStart(start)
+  const [testMBTI, setMBTI] = useState('')
+  const [testMBTI_ID, setMBTI_ID] = useState(0)
+  const getMBTI = (mbti) => {
+    setMBTI(mbti) //테스트 할 mbti
+  }
+  const getMBTI_ID = (mbti_ID) => {
+    setMBTI_ID(mbti_ID) //테스트 할 mbti
   }
 
+  let [list, setList] = useState([]) //답안 리스트
+  const put = (answer) => {
+    setList([...list, answer])
+  }
+  const erase = () => {
+    setList(list.slice(0, -1))
+  }
+
+  console.log('App list', list)
+
   return (
-    <>
-      <div>
-        {/* {startButton && <StartPage getStart={getStart} />}
-        {!startButton && <Choose />} */}
-        <TestPage />
-        {/* <button
-          style={{
-            width: '280px',
-            height: '40px',
-            backgroundColor: 'white',
-            display: 'block',
-            margin: '50px auto',
-            borderRadius: '40px',
-          }}
-          onClick={() => {
-            setComp(StartPage)
-          }}
-        >
-          테스트 하러가기 →
-        </button> */}
-      </div>
-    </>
-    // <>
-    //   <header>
-    //     {/* <button onClick={() => setComp(StartPage)}>Home</button> */}
-    //   </header>
-    //   <hr />
-    //   <main children={comp} />
-    //   <button onClick={() => setComp(Choose)}>About</button>
-    // </>
+    <div className="App">
+      <Switch>
+        <Route exact path="/">
+          <StartPage />
+        </Route>
+        <Route path="/result">
+          <ResultPage list={list} mbti={testMBTI} mbti_id={testMBTI_ID} />
+        </Route>
+        <Route path="/YouKnowMe">
+          <Choose getMBTI={getMBTI} getMBTI_ID={getMBTI_ID} />
+        </Route>
+        <Route path="/:testMBTI/:id?">
+          <TestPage put={put} erase={erase} list={list} />
+        </Route>
+      </Switch>
+    </div>
   )
-  // <div>
-  //   <div
-  //     style={{
-  //       backgroundColor: 'white',
-  //       width: '350px',
-  //       marginTop: '60px',
-  //       marginLeft: 'auto',
-  //       marginRight: 'auto',
-  //       marginBottom: '22px',
-  //     }}
-  //   >
-  //     당신의 mbti는 무엇인가요?
-  //   </div>
-  //   <div style={{ margin: '0 auto', width: '350px' }}>
-  //     <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-  //       <div
-  //         style={{
-  //           backgroundColor: 'white',
-  //           textAlign: 'center',
-  //           border: 'solid 1.8px black',
-  //           width: '64px',
-  //           height: '27px',
-  //           borderRadius: '15px',
-  //           paddingTop: '3px',
-  //         }}
-  //       >
-  //         ENTJ
-  //       </div>
-  //     </div>
-  //   </div>
-  // </div>
 }
 
 export default App

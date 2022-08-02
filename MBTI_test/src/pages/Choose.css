@@ -9,10 +9,11 @@
   box-sizing: border-box;
   width: 390px;
   height: 50vh;
-  padding-top: 4rem;
+  padding-top: 3.5vh;
+  padding-right: 5px;
 }
 .YourTypes{
-    padding: 12px;
+    padding: 6px 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -21,18 +22,21 @@
   box-sizing: border-box;
   width: 75px;
   height: 40px;
-  padding-top: 6.5px;
+  padding-top: 7.5px;
   border: solid 2px;
   border-radius: 20px;
   text-align: center;
   margin-top: 10px;
   background-color: white;
 }
-.YourTypes :hover{
+.YourTypes:hover{
   cursor: pointer;
 }
 .YourTypes>.ESTP {
   border: #558CED solid 2px;
+}
+.YourTypes>.ESTP:hover {
+  background-color: #558CED;
 }
 .YourTypes>.ESTP1 {
   background-color: #558CED;
@@ -45,4 +49,16 @@
   background-color: #3BC55A;
   border: #3BC55A solid 2px;
 }
-
+.GoBtn{
+  box-sizing: border-box;
+    width: 350px;
+    height: 40px;
+    background-color: #2A6FFF;
+    color: white;
+    border: solid 1.5px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 8px;
+    text-align: center;
+}

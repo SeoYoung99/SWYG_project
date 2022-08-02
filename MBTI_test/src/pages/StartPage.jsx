@@ -2,8 +2,9 @@ import React from 'react'
 import './Startpage.css'
 import logo from '../logo.png'
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 
-function StartPage({ getStart }) {
+function StartPage() {
   return (
     <>
       <div className="App">
@@ -19,20 +20,19 @@ function StartPage({ getStart }) {
             }}
             alt="logo"
           />
-          <div
-            className="StartButton"
-            style={{ cursor: 'pointer' }}
-            onClick={() => getStart(false)}
-          >
+          <Link to='/YouKnowMe' style={{textDecoration:'none', color: 'black'}}>
+          <div className="StartBtn">
             테스트 하러가기 →
           </div>
+          </Link>
           <div
             style={{ color: 'white', textAlign: 'center', paddingTop: '30px' }}
-          >
-            지금 300 명이 진행 중이에요!{' '}
+>
+            지금까지 300 명이 진행했어요!{' '}
           </div>
         </div>
       </div>
+      
     </>
   )
 }
