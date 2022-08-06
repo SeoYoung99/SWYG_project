@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
 import './Choose.css'
-
 export default function Choose(props) {
   const mbtis = [
     {id: 1, type:'ESTP'},
@@ -23,6 +22,7 @@ export default function Choose(props) {
   ]
   const [yourTypes, setYourTypes] = useState("")  //나의 mbti받음
   const getYourTypes = (mbti) =>{
+    props.getYourMBTI(mbti.type)
     setYourTypes(mbti.type)
     yourClicked(mbti.id)
   }

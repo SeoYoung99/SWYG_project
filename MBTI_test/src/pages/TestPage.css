@@ -38,16 +38,18 @@
 }
 .Question{
   margin-top: 40px;
-  padding-left: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 30px;
 }
 .MBTI{
   display: inline-block;
   width: 75px;
   height: 40px;
-  border: solid 2px;
   border-radius: 20px;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 6px;
+  color: white;
   box-sizing: border-box;
 }
 .Answer{
@@ -61,6 +63,7 @@
   padding-top: 14px;
   text-align: center;
   box-shadow:3px 3px 5px lightgray;
+  font-size: small;
 }
 .Answer:hover{
   cursor: pointer;
@@ -79,6 +82,7 @@
   text-align: center;
   border: #2A6FFF solid 2px;
   box-shadow: 1px 1px 4px #2A6FFF;
+  font-size: small;
 }
 .NextBtn{
   box-sizing: border-box;

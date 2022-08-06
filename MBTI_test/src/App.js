@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, createContext } from 'react'
 import {
   BrowserRouter,
   Router,
@@ -13,9 +13,17 @@ import Choose from './pages/Choose_MBTI'
 import TestPage from './pages/TestPage'
 import ResultPage from './pages/ResultPage'
 
+// export const MyContext = createContext()
+
 function App() {
+  //context에 들어갈 값: 답안 & rankArray
+
+  const [yourMBTI, setYourMBTI] = useState('')
   const [testMBTI, setMBTI] = useState('')
   const [testMBTI_ID, setMBTI_ID] = useState(0)
+  const getYourMBTI = (mbti) => {
+    setYourMBTI(mbti) //내 mbti
+  }
   const getMBTI = (mbti) => {
     setMBTI(mbti) //테스트 할 mbti
   }
@@ -40,10 +48,21 @@ function App() {
           <StartPage />
         </Route>
         <Route path="/result">
-          <ResultPage list={list} mbti={testMBTI} mbti_id={testMBTI_ID} />
+          {/* <MyContext.Provider value={list}> */}
+          <ResultPage
+            list={list}
+            yourMbti={yourMBTI}
+            mbti={testMBTI}
+            mbti_id={testMBTI_ID}
+          />
+          {/* </MyContext.Provider> */}
         </Route>
         <Route path="/YouKnowMe">
-          <Choose getMBTI={getMBTI} getMBTI_ID={getMBTI_ID} />
+          <Choose
+            getYourMBTI={getYourMBTI}
+            getMBTI={getMBTI}
+            getMBTI_ID={getMBTI_ID}
+          />
         </Route>
         <Route path="/:testMBTI/:id?">
           <TestPage put={put} erase={erase} list={list} />

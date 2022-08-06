@@ -1,0 +1,75 @@
+.Result {
+  background-color: #F8FAFF;
+  width: 390px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.Score {
+  display: block;
+  /* background-color: rgb(255, 204, 137); */
+  width: 342;
+  height: 5vh;
+  padding-top: 2vh;
+  text-align: center;
+}
+.ScoreText{
+  position: inherit;
+  /* background-color: rgb(255, 204, 137); */
+  font-size: large;
+  width: 342;
+  text-align: center;
+  padding: 0 30px;
+}
+.Border{
+  display: block;
+  border: blue solid 2px;
+  border-radius: 20px;
+  width: 360px;
+  height: 135px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.Character{
+  padding: 22px 30px;
+  font-size: 15px;
+}
+.AgainBtn{
+  box-sizing: border-box;
+  width: 165px;
+  height: 40px;
+  background-color: #E9E9E9;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-top: 9.5px;
+  text-align: center;
+}
+.AgainBtn:hover {
+  cursor: pointer;
+}
+.Share{
+  box-sizing: border-box;
+  width: 165px;
+  height: 40px;
+  background-color: #E9E9E9;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-top: 9.5px;
+  text-align: center;
+}
+.Share:hover{
+  cursor: pointer;
+}
+.MBTIColor{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 70px;
+  height: 40px;
+  padding-top: 8px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 3px;
+  background-color: aqua;
+  color: white
+}

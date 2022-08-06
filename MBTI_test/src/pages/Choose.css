@@ -37,17 +37,192 @@
 }
 .YourTypes>.ESTP:hover {
   background-color: #558CED;
+  color: white;
 }
 .YourTypes>.ESTP1 {
   background-color: #558CED;
   border: #558CED solid 2px;
+  color: white;
 }
 .YourTypes > .ISTJ{
   border: #3BC55A solid 2px;
 }
+.YourTypes>.ISTJ:hover {
+  background-color: #3BC55A;
+  color: white;
+}
 .YourTypes> .ISTJ9 {
   background-color: #3BC55A;
   border: #3BC55A solid 2px;
+  color: white;
+}
+.YourTypes>.ESFP {
+  border: #FACD34 solid 2px;
+}
+.YourTypes>.ESFP:hover {
+  background-color: #FACD34;
+  color: white;
+}
+.YourTypes>.ESFP2 {
+  background-color: #FACD34;
+  border: #FACD34 solid 2px;
+  color: white;
+}
+.YourTypes>.ENFP {
+  border: #EF7654 solid 2px;
+}
+.YourTypes>.ENFP:hover {
+  background-color: #EF7654;
+  color: white;
+}
+.YourTypes>.ENFP3 {
+  background-color: #EF7654;
+  border: #EF7654 solid 2px;
+  color: white;
+}
+.YourTypes>.ENTP {
+  border: #A0CD31 solid 2px;
+}
+.YourTypes>.ENTP:hover {
+  background-color: #A0CD31;
+  color: white;
+}
+.YourTypes>.ENTP4 {
+  background-color: #A0CD31;
+  border: #A0CD31 solid 2px;
+  color: white;
+}
+.YourTypes>.ESTJ {
+  border: #D1CD43 solid 2px;
+}
+.YourTypes>.ESTJ:hover {
+  background-color: #D1CD43;
+  color: white;
+}
+.YourTypes>.ESTJ5 {
+  background-color: #D1CD43;
+  border: #D1CD43 solid 2px;
+  color: white;
+}
+.YourTypes>.ESFJ {
+  border: #F55E60 solid 2px;
+}
+.YourTypes>.ESFJ:hover {
+  background-color: #F55E60;
+  color: white;
+}
+.YourTypes>.ESFJ6 {
+  background-color: #F55E60;
+  border: #F55E60 solid 2px;
+  color: white;
+}
+.YourTypes>.ENFJ {
+  border: #37BC8D solid 2px;
+}
+.YourTypes>.ENFJ:hover {
+  background-color: #37BC8D;
+  color: white;
+}
+.YourTypes>.ENFJ7 {
+  background-color: #37BC8D;
+  border: #37BC8D solid 2px;
+  color: white;
+}
+.YourTypes>.ENTJ {
+  border: #DA2D90 solid 2px;
+}
+.YourTypes>.ENTJ:hover {
+  background-color: #DA2D90;
+  color: white;
+}
+.YourTypes>.ENTJ8 {
+  background-color: #DA2D90;
+  border: #DA2D90 solid 2px;
+  color: white;
+}
+.YourTypes>.ISFJ {
+  border: #39CCF2 solid 2px;
+}
+.YourTypes>.ISFJ:hover {
+  background-color: #39CCF2;
+  color: white;
+}
+.YourTypes>.ISFJ10 {
+  background-color: #39CCF2;
+  border: #39CCF2 solid 2px;
+  color: white;
+}
+.YourTypes>.INFJ {
+  border: #F55682 solid 2px;
+}
+.YourTypes>.INFJ:hover {
+  background-color: #F55682;
+  color: white;
+}
+.YourTypes>.INFJ11 {
+  background-color: #F55682;
+  border: #F55682 solid 2px;
+  color: white;
+}
+.YourTypes>.INTJ {
+  border: #E7AD73 solid 2px;
+}
+.YourTypes>.INTJ:hover {
+  background-color: #E7AD73;
+  color: white;
+}
+.YourTypes>.INTJ12 {
+  background-color: #E7AD73;
+  border: #E7AD73 solid 2px;
+  color: white;
+}
+.YourTypes>.ISTP {
+  border: #B780C6 solid 2px;
+}
+.YourTypes>.ISTP:hover {
+  background-color: #B780C6;
+  color: white;
+}
+.YourTypes>.ISTP13 {
+  background-color: #B780C6;
+  border: #B780C6 solid 2px;
+  color: white;
+}
+.YourTypes>.ISFP {
+  border: #DF566B solid 2px;
+}
+.YourTypes>.ISFP:hover {
+  background-color: #DF566B;
+  color: white;
+}
+.YourTypes>.ISFP14 {
+  background-color: #DF566B;
+  border: #DF566B solid 2px;
+  color: white;
+}
+.YourTypes>.INFP {
+  border: #F4961F solid 2px;
+}
+.YourTypes>.INFP:hover {
+  background-color: #F4961F;
+  color: white;
+}
+.YourTypes>.INFP15 {
+  background-color: #F4961F;
+  border: #F4961F solid 2px;
+  color: white;
+}
+.YourTypes>.INTP {
+  border: #7375E7 solid 2px;
+}
+.YourTypes>.INTP:hover {
+  background-color: #7375E7;
+  color: white;
+}
+.YourTypes>.INTP16 {
+  background-color: #7375E7;
+  border: #7375E7 solid 2px;
+  color: white;
 }
 .GoBtn{
   box-sizing: border-box;
