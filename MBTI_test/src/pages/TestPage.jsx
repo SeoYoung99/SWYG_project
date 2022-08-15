@@ -100,6 +100,7 @@ function TestPage(props){
       return
     }
     else{
+      setStyle('')
       props.put(style)
       if(quiz === 10){
         history.push('/result')
@@ -111,6 +112,7 @@ function TestPage(props){
     }
   }
    const previousQuiz= () => { //이전 버튼 클릭 시
+      setStyle('')
       props.erase()
       if(quiz === 1){
         history.push('/YouKnowMe')
@@ -125,7 +127,6 @@ function TestPage(props){
   
   console.log(params, quiz)
    
-
   return(
     <div className="Background">
       <div className="Center">
