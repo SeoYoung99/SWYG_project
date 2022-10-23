@@ -423,7 +423,7 @@ function ResultPage(props) {
       navigator.share({
         title: '너! 나 알아?',
         text: 'YouKnowME?',
-        url: 'http://localhost:3000/result',
+        url: 'http://localhost:3000',
       })
     } else {
       alert('공유하기가 지원되지 않는 환경 입니다.') //웹에서는 되는데,,, 앱에서 안됨..why?
